@@ -1,0 +1,85 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Teste Altos elementos!</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-item detail-push>
+		<ion-icon name="star"></ion-icon>
+		{{versao}}
+	</ion-item>
+
+	<button  ion-item (click)="buttonClick()">
+  {{outro}}
+</button>
+
+<button ion-item (click)="link()">
+  Valores Comuns
+</button>
+
+
+<button id="oi" ion-button round  (click)="presentAlert()" >ROK2</button>
+
+<button id="oi2" ion-button round warning (click)="presentPrompt()" >ROKAAAA</button>
+
+<button  ion-button round warning (click)="deleteLista()" >delete item!</button>
+
+<tr *ngFor="let item2 of items; let i = index;let even = even; let odd = odd" style="background-color: #eee;" >
+    <td>{{item2}}</td>
+    <td>{{i}}</td>
+    <td><button  ion-button round warning (click)="deleteLista(i)" >delete item!</button></td>
+</tr>
+
+
+ <ion-item>
+      <ion-avatar item-start>
+        <img src="https://raw.githubusercontent.com/ionic-team/ionic-preview-app/master/src/assets/img/avatar-ts-woody.png">
+      </ion-avatar>
+      <h2>Woody</h2>
+      <p>This town ain't big enough for the two of us!</p>
+      <ion-note item-end>3:43 pm</ion-note>
+    </ion-item>
+
+    <ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="https://github.com/ionic-team/ionic-preview-app/blob/master/src/assets/img/slimer.jpg?raw=true">
+      </ion-avatar>
+      <h2>Slimer</h2>
+    </ion-item>
+   
+    <ion-item-options side="right">
+       <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Text
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Call
+      </button>
+      <button ion-button color="primary">
+        <ion-icon name="mail"></ion-icon>
+        Email
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <button ion-item *ngFor="let item2 of items" (click)="itemSelected(item)">
+    {{ item2 }}
+  </button>  
+</ion-list>
+
+<vg-player>
+        <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </vg-player>
+
+
+
+</ion-content>
