@@ -1,3 +1,4 @@
+ import { ViewChild } from '@angular/core'
 import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
