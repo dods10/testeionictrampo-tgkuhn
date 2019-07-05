@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
-import { VgAPI } from 'videogular2/core';
-import { VgHLS } from 'videogular2/src/streaming/vg-hls/vg-hls';
+import { VideoJs} from '@videojs/http-streaming';
 
 
 
@@ -77,8 +76,10 @@ if(document.getElementById("oi2").style.display=="none"){
   document.getElementById("oi2").style.display="none";
 }
 
+JsVideo video = document.getElementById("vid1");
+video.play();
 
-this.estilo ="ion-hide";
+//this.estilo ="ion-hide";
   }
 
   estiloA(){
