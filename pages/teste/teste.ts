@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
-import { VideoJs} from '@videojs/http-streaming';
+
 
 
 
