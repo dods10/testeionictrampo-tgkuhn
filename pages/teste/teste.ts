@@ -130,7 +130,7 @@ this.estilo ="ion-hide";
     
     const alert = await this.alert.create({
       title: 'Subtitle',
-      message: 'This is an alert message.',
+      message: this.outro,
      buttons: [
         {
           text: 'Cancel',
