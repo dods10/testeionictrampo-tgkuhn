@@ -76,8 +76,9 @@ if(document.getElementById("oi2").style.display=="none"){
   document.getElementById("oi2").style.display="none";
 }
 
-JsVideo video = document.getElementById("vid1");
-video.play();
+var player = videojs('vid1');
+player.play();
+
 
 //this.estilo ="ion-hide";
   }
