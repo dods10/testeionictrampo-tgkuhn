@@ -19,15 +19,9 @@ export class PaginaMinha {
   public conteudo:string;
   public ops:string;
   public estilo:any;
- 
-  
-
 
    public items = [
-    'Pokémon Yellow',
-    'Super Metroid',
-    'Mega Man X'
-
+    'Pokémon Yellow'
   ];
 
   itemSelected(item: string) {
@@ -76,8 +70,8 @@ if(document.getElementById("oi2").style.display=="none"){
   document.getElementById("oi2").style.display="none";
 }
 
-var player = videojs('vid1');
-player.play();
+//var player = videojs('vid1');
+//player.play();
 
 
 //this.estilo ="ion-hide";
