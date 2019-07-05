@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
+import { VgAPI } from 'videogular2/core';
+import { VgHLS } from 'videogular2/src/streaming/vg-hls/vg-hls';
 
 
 
@@ -17,6 +19,9 @@ export class PaginaMinha {
   public ops:string;
   public estilo:any;
  
+  @ViewChild(VgHLS) vgHls: VgHLS;
+
+
    public items = [
     'Pokémon Yellow',
     'Super Metroid',
@@ -47,6 +52,8 @@ export class PaginaMinha {
 
     this.versao = this.plat.platforms();
     this.estilo = true;
+
+
     
   }
 

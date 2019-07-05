@@ -23,10 +23,7 @@ outracoisa(e){
 
   };
 
-  axios.post('/save', { firstName: 'Marlon', lastName: 'Bernardes' })
-  .then(function(response){
-    console.log('salvo com sucesso')
-  });  
+ 
 }
 
 teste(e){
