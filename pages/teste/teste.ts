@@ -8,6 +8,7 @@ import { VgHLS } from 'videogular2/src/streaming/vg-hls/vg-hls';
 
 
 
+
 @Component({
   selector: 'page-about',
   templateUrl: 'teste.html'
@@ -20,7 +21,7 @@ export class PaginaMinha {
   public ops:string;
   public estilo:any;
  
-  @ViewChild(VgHLS) vgHls: VgHLS;
+  
 
 
    public items = [
